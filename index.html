@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <title>Git Cards</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h2>Git Cards</h2>
+            <nav>
+                <a href="#basico">Git - básico</a>
+                <a href="#intermediario">Git - intermediário</a>
+                <a href="#avancado">Git - avançado</a>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="basico">
+            <h2 class="heading-2" id="basico">Comandos e conceitos básicos do git</h2>
+            <h2 class="heading-2">Git Básico</h2>
+            <div class="containerCartao">
+
+                <div class="borda">
+                    <h3 class="heading-3">O que é o Git?</h3>
+                    <p class="paragraph">O Git é um sistema de controle de versão distribuído utilizado para registrar o
+                        histórico de edições de qualquer tipo de arquivo.</p>
+                </div>
+            </div>
+
+
+            <h2 class="heading-2">Ciclo de vida dos arquivos no Git</h2>
+
+            <div class="containerCartao">
+                <div class="borda">
+                    <h3 class="heading-3">Untracked</h3>
+                    <p class="paragraph">Ao criar um novo arquivo em um projeto gerenciado pelo Git os arquivos iniciam
+                        como untracked, ou seja, o mesmo ainda não foi adicionado ao monitoramento do Git.</p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Tracked</h3>
+                    <p class="paragraph">Quando adicionamos arquivos ao monitoramento do Git, o status desse arquivo
+                        passa a ser tracked. A partir de então o Git passa a controlar as mudanças neste arquivo. Os
+                        arquivos com esse estado são conhecidos como <strong>new file</strong>.</p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Modified</h3>
+                    <p class="paragraph">Quando modificamos um arquivo que está sendo rastreado (no estado tracked), seu
+                        estado passa a ser modified.</p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Staged</h3>
+                    <p class="paragraph">Quando um arquivo está pronto para ser comitado (está no estado tracked e com
+                        tudo finalizado) então está pronto para ser enviado para o repositório remoto (Github) com um
+                        <strong>commit</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="observacao">
+                <p class="paragraph"><strong>Observação: </strong>Apenas um arquivo no estado <i>tracked</i> pode ir
+                    para <i>staged</i>. Toda vez que um arquivo estiver no estado modified é necessário modificá-lo
+                    para tracked.</p>
+            </div>
+
+            <h2 class="heading-2">Ignorar arquivos</h2>
+
+            <div class="containerCartao">
+                <div class="borda">
+                    <h3 class="heading-3">.gitignore</h3>
+                    <p class="paragraph">Para que o Git ignore arquivos ou diretórios ao fazer um commit, basta criar um
+                        arquivo chamado <strong>.gitignore</strong> na raiz do seu repositório local e escrever o nome
+                        dos arquivos a serem ignorados</p>
+                </div>
+                <div class="borda">
+                    <h3 class="heading-3">Dica</h3>
+                    <p class="paragraph">Para ignorar todos os arquivos com uma extensão em comum: <br> <br>
+                        <strong>*</strong>.nomeDaExtensão <br> <br> Para ignorar uma pasta <br>
+                        <br><strong>**</strong>nomeDaPasta</p>
+                </div>
+            </div>
+
+            <h2 class="heading-2">Operações básicas no terminal</h2>
+
+            <div class="containerCartao">
+                <div class="borda">
+                    <h3 class="heading-3">Inicializar o git no seu repositório</h3>
+                    <p class="paragraph">Basta digitar no terminal: <br> <span>git init</span></p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Configurações básicas após criar um repositório</h3>
+                    <p class="paragraph"><br> <span>git config user.name "seu nome"</span> <br> <span>git config
+                            user.email "seu email"</span> </p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Adicionando um arquivo ao estado tracked</h3>
+                    <p class="paragraph"><span>git add nomeDoArquivo</span>
+                        <span>git add .</span> O último adiciona todos os itens de uma vez para tracked.
+                    </p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Realizando um commit</h3>
+                    <p class="paragraph"><span>git commit -m "mensagem"</span></p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Log de edição do repositório</h3>
+                    <p class="paragraph"><span>git log</span> <span>git log <i>n</i></span>Mostra os últimos n logs
+                        <span>git log --oneline</span>Versão simplificada dos logs</p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Indo para logs antigos</h3>
+                    <p class="paragraph"><span>git checkout idDoLog</span></p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Voltando para o log mais recente</h3>
+                    <p class="paragraph"><span>git checkout master</span></p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Renomeando arquivo</h3>
+                    <p class="paragraph"><span>git mv nomeAntigo nomeNovo</span></p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Comparando arquivos</h3>
+                    <p class="paragraph">Quando um arquivo está no estado <i>staged</i>, com o comando <span>get diff --staged</span> É possível ver as diferenças entre o que está prestes a ser comitado e o que foi comitado por último</p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Corrigindo mensagem do último commit</h3>
+                    <p class="paragraph">Mensagem errada: <span>atualizacaoo de bugs</span> corrigindo: <span>git commit --amend -m "Atualização de bugs"</span></p>
+                </div>
+
+                <div class="borda">
+                    <h3 class="heading-3">Implementando algo que era pra estar no último commit feito</h3>
+                    <p class="paragraph"><span>git commit --amend -m "mensagem"</span> Esse comando adiciona tudo no mesmo commit</p>
+                </div>
+
+                <div class="borda bordaCode">
+                    <h3 class="heading-3">Resetando arquivos modified para o último commit</h3>
+                    <p class="paragraph"><span>git reset HEAD --hard</span></p>
+                </div>
+
+                <div class="borda bordaCode">
+                    <h3 class="heading-3">Para resetar apenas um arquivo ao invés de todo o repositório</h3>
+                    <p class="paragraph"><span>git checkout nomeDoArquivo</span></p>
+                </div>
+
+                <div class="borda bordaCode">
+                    <h3 class="heading-3">Descartando o último commit</h3>
+                    <p class="paragraph"><span>git reser HEAD^ --hard</span></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
