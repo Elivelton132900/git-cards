@@ -89,7 +89,8 @@
                     <h3 class="heading-3">Dica</h3>
                     <p class="paragraph">Para ignorar todos os arquivos com uma extensão em comum: <br> <br>
                         <strong>*</strong>.nomeDaExtensão <br> <br> Para ignorar uma pasta <br>
-                        <br><strong>**</strong>nomeDaPasta</p>
+                        <br><strong>**</strong>nomeDaPasta
+                    </p>
                 </div>
             </div>
 
@@ -122,7 +123,8 @@
                 <div class="borda">
                     <h3 class="heading-3">Log de edição do repositório</h3>
                     <p class="paragraph"><span>git log</span> <span>git log <i>n</i></span>Mostra os últimos n logs
-                        <span>git log --oneline</span>Versão simplificada dos logs</p>
+                        <span>git log --oneline</span>Versão simplificada dos logs
+                    </p>
                 </div>
 
                 <div class="borda">
@@ -142,17 +144,21 @@
 
                 <div class="borda">
                     <h3 class="heading-3">Comparando arquivos</h3>
-                    <p class="paragraph">Quando um arquivo está no estado <i>staged</i>, com o comando <span>get diff --staged</span> É possível ver as diferenças entre o que está prestes a ser comitado e o que foi comitado por último</p>
+                    <p class="paragraph">Quando um arquivo está no estado <i>staged</i>, com o comando <span>get diff
+                            --staged</span> É possível ver as diferenças entre o que está prestes a ser comitado e o que
+                        foi comitado por último</p>
                 </div>
 
                 <div class="borda">
                     <h3 class="heading-3">Corrigindo mensagem do último commit</h3>
-                    <p class="paragraph">Mensagem errada: <span>atualizacaoo de bugs</span> corrigindo: <span>git commit --amend -m "Atualização de bugs"</span></p>
+                    <p class="paragraph">Mensagem errada: <span>atualizacaoo de bugs</span> corrigindo: <span>git commit
+                            --amend -m "Atualização de bugs"</span></p>
                 </div>
 
                 <div class="borda">
                     <h3 class="heading-3">Implementando algo que era pra estar no último commit feito</h3>
-                    <p class="paragraph"><span>git commit --amend -m "mensagem"</span> Esse comando adiciona tudo no mesmo commit</p>
+                    <p class="paragraph"><span>git commit --amend -m "mensagem"</span> Esse comando adiciona tudo no
+                        mesmo commit</p>
                 </div>
 
                 <div class="borda bordaCode">
@@ -167,10 +173,70 @@
 
                 <div class="borda bordaCode">
                     <h3 class="heading-3">Descartando o último commit</h3>
-                    <p class="paragraph"><span>git reser HEAD^ --hard</span></p>
+                    <p class="paragraph"><span>git resert HEAD^ --hard</span></p>
                 </div>
-
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="intermediario">
+            <h2 class="heading-2">Git intermediário</h2>
+        </div>
+
+
+        <div class="containerCartao">
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Branches</h3>
+                <p class="paragraph">Branch nada mais é do que uma ramificação do projeto. Branch master é o ramo
+                    principal do seu projeto</p>
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Retornando as branches do projeto</h3>
+                <p class="paragraph"><span>git branch</span></p>
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Criando uma branch</h3>
+                <p class="paragraph"><span>git branch nomeDaBranch</span></p>
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Criando uma branch e já acessando-a</h3>
+                <p class="paragraph"><span>git checkout -b nomrDaBranch</span></p>
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Mudando de branch</h3>
+                <p class="paragraph"><span>git checkout nomeDaBranck</span></p>
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Voltando para a branch master</h3>
+                <p class="paragraph"><span>git chekcout master</span></p>
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Deletando uma branch</h3>
+                <p class="paragraph"><span>git branch -d nomeDaBranch</span></p>
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Merge</h3>
+                <p class="paragraph">O merge é utilizado para combinar dois branches e juntar tudo num novo commit. Como efetuar um merge:<span>na branch master, basta digitar no terminal: </span><span>git merge nomeDaBranch</span></p>
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Rebase</h3>
+                <p class="paragraph">Ao contrário do merge que efetua o commit no final da branch master, o rebase adiciona o commit no começo da branch<span>git rebase nomeDaBranch</span></p>
+            </div>
+        </div>
+
+        <h2 class="heading-2">Clone e Pull</h2>
+
+        <div class="containerCartao">
+            
         </div>
     </section>
 
