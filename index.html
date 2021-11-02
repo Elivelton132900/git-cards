@@ -28,7 +28,7 @@
     <section>
         <div class="basico">
             <h2 class="heading-2" id="basico">Comandos e conceitos básicos do git</h2>
-            <h2 class="heading-2">Git Básico</h2>
+            <h2 class="heading-2">Git básico</h2>
             <div class="containerCartao">
 
                 <div class="borda">
@@ -233,10 +233,55 @@
             </div>
         </div>
 
-        <h2 class="heading-2">Clone e Pull</h2>
+        <h2 class="heading-2">Clone e Push</h2>
 
         <div class="containerCartao">
-            
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Clonando um repositório</h3>
+                <p class="paragraph">Para clonar um repositório para a sua máquina basta digitar no terminal<span>git clone link/CaminhoDoRepositorio</span></p>
+                
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Push</h3>
+                <p class="paragraph">Para submeter mudanças e/ou novos arquivos para um repositorio central, basta digitar no terminal<span>git push</span></p>
+            </div>
+        </div>
+
+        <h2 class="heading-2">Fetch e Pull</h2>
+
+        <div class="containerCartao">
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Fetch</h3>
+                <p class="paragraph">Fetch baixa as atualizações de um repositório remoto mas não as aplica no repositório local, ou seja, não faz o merge.<span>git fetch</span>Para efetuar um merge e atualizar o repositorio <span>git rebase</span></p>
+                
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Pull</h3>
+                <p class="paragraph">O comando pull baixa as atualizações do repositório remoto e já as aplica, ou seja, já efetua o merge<span>git pull</span></p>
+            </div>
+        </div>
+
+        <h2 class="heading-2">Trabalhando com tags</h2>
+
+        <div class="containerCartao">
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Tag</h3>
+                <p class="paragraph">Tags demarcam um ponto (commit) que representa alguma mudança significativa no código, ou seja, uma versão do projeto. Para criar uma tag: <span>git tag nomeDaTag</span></p>
+                
+            </div>
+
+            <div class="borda bordaCode">
+                <h3 class="heading-3">Submetendo a tag ao repositório remoto</h3>
+                <p class="paragraph"><span>git push origin nomeDaTag</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="avancado">
+            <h2 class="heading-2">Git avançado</h2>
         </div>
     </section>
 
