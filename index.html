@@ -161,17 +161,17 @@
                         mesmo commit</p>
                 </div>
 
-                <div class="borda bordaCode">
+                <div class="borda">
                     <h3 class="heading-3">Resetando arquivos modified para o último commit</h3>
                     <p class="paragraph"><span>git reset HEAD --hard</span></p>
                 </div>
 
-                <div class="borda bordaCode">
+                <div class="borda">
                     <h3 class="heading-3">Para resetar apenas um arquivo ao invés de todo o repositório</h3>
                     <p class="paragraph"><span>git checkout nomeDoArquivo</span></p>
                 </div>
 
-                <div class="borda bordaCode">
+                <div class="borda">
                     <h3 class="heading-3">Descartando o último commit</h3>
                     <p class="paragraph"><span>git resert HEAD^ --hard</span></p>
                 </div>
@@ -186,48 +186,48 @@
 
 
         <div class="containerCartao">
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Branches</h3>
                 <p class="paragraph">Branch nada mais é do que uma ramificação do projeto. Branch master é o ramo
                     principal do seu projeto</p>
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Retornando as branches do projeto</h3>
                 <p class="paragraph"><span>git branch</span></p>
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Criando uma branch</h3>
                 <p class="paragraph"><span>git branch nomeDaBranch</span></p>
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Criando uma branch e já acessando-a</h3>
                 <p class="paragraph"><span>git checkout -b nomrDaBranch</span></p>
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Mudando de branch</h3>
                 <p class="paragraph"><span>git checkout nomeDaBranck</span></p>
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Voltando para a branch master</h3>
                 <p class="paragraph"><span>git chekcout master</span></p>
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Deletando uma branch</h3>
                 <p class="paragraph"><span>git branch -d nomeDaBranch</span></p>
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Merge</h3>
                 <p class="paragraph">O merge é utilizado para combinar dois branches e juntar tudo num novo commit. Como efetuar um merge:<span>na branch master, basta digitar no terminal: </span><span>git merge nomeDaBranch</span></p>
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Rebase</h3>
                 <p class="paragraph">Ao contrário do merge que efetua o commit no final da branch master, o rebase adiciona o commit no começo da branch<span>git rebase nomeDaBranch</span></p>
             </div>
@@ -236,13 +236,13 @@
         <h2 class="heading-2">Clone e Push</h2>
 
         <div class="containerCartao">
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Clonando um repositório</h3>
                 <p class="paragraph">Para clonar um repositório para a sua máquina basta digitar no terminal<span>git clone link/CaminhoDoRepositorio</span></p>
                 
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Push</h3>
                 <p class="paragraph">Para submeter mudanças e/ou novos arquivos para um repositorio central, basta digitar no terminal<span>git push</span></p>
             </div>
@@ -251,13 +251,13 @@
         <h2 class="heading-2">Fetch e Pull</h2>
 
         <div class="containerCartao">
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Fetch</h3>
                 <p class="paragraph">Fetch baixa as atualizações de um repositório remoto mas não as aplica no repositório local, ou seja, não faz o merge.<span>git fetch</span>Para efetuar um merge e atualizar o repositorio <span>git rebase</span></p>
                 
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Pull</h3>
                 <p class="paragraph">O comando pull baixa as atualizações do repositório remoto e já as aplica, ou seja, já efetua o merge<span>git pull</span></p>
             </div>
@@ -266,13 +266,13 @@
         <h2 class="heading-2">Trabalhando com tags</h2>
 
         <div class="containerCartao">
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Tag</h3>
                 <p class="paragraph">Tags demarcam um ponto (commit) que representa alguma mudança significativa no código, ou seja, uma versão do projeto. Para criar uma tag: <span>git tag nomeDaTag</span></p>
                 
             </div>
 
-            <div class="borda bordaCode">
+            <div class="borda">
                 <h3 class="heading-3">Submetendo a tag ao repositório remoto</h3>
                 <p class="paragraph"><span>git push origin nomeDaTag</span></p>
             </div>
@@ -283,6 +283,26 @@
         <div id="avancado">
             <h2 class="heading-2">Git avançado</h2>
         </div>
+
+        <div class="containerCartao">
+            <div class="borda">
+                <h3 class="heading-3">Adicionando um repositório remoto ao projeto</h3>
+                <p class="paragraph"><span>git remote add origin linkDoRepositorio</span></p>
+            </div>
+
+            <div class="borda">
+                <h3 class="heading-3">Push</h3>
+                <p class="paragraph">Após criar um repositório remoto no Github, para upá-lo basta digitar no terminal <span>git push -u origin master</span> </p>  
+            </div>
+
+            <div class="borda">
+                <h3 class="heading-3">Baixando atualizações do repositório remoto</h3>
+                <p class="paragraph"><span>git pull origin master</span> </p>  
+            </div>
+
+        </div>
+
+
     </section>
 
 </body>
